@@ -1,0 +1,4 @@
+import type { Metadata } from 'next';
+import './globals.css';
+export const metadata: Metadata = { metadataBase: new URL('https://ksdosouthsudan.org'), title: { default: 'Knowledge Spear Development Organization | KSDO', template: '%s | KSDO South Sudan' }, description: 'Knowledge is Freedom. KSDO is a South Sudanese, non-profit and non-political organization advancing inclusive education, youth empowerment and community development.', keywords: ['KSDO','Knowledge Spear Development Organization','education South Sudan','scholarships','youth empowerment','Juba'], openGraph: { title: 'Knowledge Spear Development Organization', description: 'Knowledge is Freedom. Expanding educational opportunity and empowering communities in South Sudan.', type: 'website', locale: 'en_US' }, robots: { index: true, follow: true } };
+export default function RootLayout({children}:{children:React.ReactNode}) { return <html lang="en"><body>{children}</body></html>; }
