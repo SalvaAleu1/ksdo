@@ -1,0 +1,2 @@
+import type { MetadataRoute } from 'next';
+export default function sitemap(): MetadataRoute.Sitemap { const base='https://ksdosouthsudan.org'; const paths=['','about','programmes','scholarships','team','publications','get-involved','contact','women-microcredit','privacy']; return paths.map(path=>({url:path?`${base}/${path}`:base,lastModified:new Date(),changeFrequency:'monthly',priority:path===''?1:0.7})); }
